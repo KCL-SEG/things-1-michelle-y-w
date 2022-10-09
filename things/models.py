@@ -9,9 +9,9 @@ class Thing(models.Model):
         blank=False
     )
     description = models.TextField(
+        max_length=120,
         unique=False,
-        blank=True,
-        max_length=120
+        blank=True
     )
     quantity = models.IntegerField(
         unique=False,
